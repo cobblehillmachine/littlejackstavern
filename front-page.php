@@ -18,7 +18,11 @@
 			<div class="hours"><?php the_field('lunch_hours') ?></div>
 			<div class="menu ">
 				<br>
-				<a class="button view-menu" target=_blank href="<?php the_field('total_menu') ?>">View Menu</a>
+				<!-- <a class="button view-menu" target=_blank href="<?php // the_field('total_menu') ?>">View Menu</a> -->
+				<a class="button view-menu" target=_blank href="<?php the_field('lunch_menu') ?>">Lunch Menu</a>
+				<br>
+				<br>
+				<a class="button view-menu" target=_blank href="<?php the_field('dinner_menu') ?>">Dinner Menu</a>
 				<br>
 				<br>
 				<a href="https://resy.com/cities/chs/little-jacks-tavern" id="resyButton-t3ax7i18">Book your Little Jack's Tavern reservation on Resy</a>
