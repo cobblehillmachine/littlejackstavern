@@ -14,7 +14,7 @@ $( window ).load(function() {
 })
 
 $( document).ready(function() {
-
+	realWedSlider();
 })
 
 $( window ).resize(function() {
@@ -60,6 +60,16 @@ function smoothScroll(element, padding) {
 function heroSize() {
 	var winH = $(window).height();
 	$('.hero').css('height', winH);
+}
+
+function realWedSlider() {
+	$('.flexslider').flexslider({
+		slideshow: true,
+		controlNav: false,
+		directionNav: false,
+		animation: 'slide',
+		smoothHeight: true
+	})
 }
 
 

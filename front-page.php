@@ -1,6 +1,18 @@
 <?php get_header(); ?>
 <div class="hero" style="background-image:url(<?php the_field('hero_background_image') ?>)">
-	<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png"></script>
+	<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" style="z-index: 5" />
+	<div class="flexslider" style="border: none;" >
+	
+	  <ul class="slides">
+	  <?php while( have_rows('slider') ): the_row();
+	    $image = get_sub_field('image'); ?>
+	    <li style="background-image: url('<?php  echo $image ?>');height: 100vh;background-position: center center;background-repeat: no-repeat;background-size: cover;">
+<!-- 	    	<img src="<?php echo $image; ?>" /> -->
+	    </li>
+	  <?php endwhile; ?>
+	  </ul>
+	</div>
+
 </div>
 <hr>
 <div class="yellow">
