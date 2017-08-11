@@ -37,6 +37,7 @@ function add_style_sheets() {
 	if( !is_admin() ) {
 		wp_enqueue_style( 'reset', get_template_directory_uri().'/style.css', 'screen'  );
 		wp_enqueue_style( 'font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css', 'screen');
+		wp_enqueue_style( 'flexslidercss', get_template_directory_uri().'/assets/css/flexslider.css', 'screen' );
 		wp_enqueue_style( 'main', get_template_directory_uri().'/assets/css/style.less', 'screen' );
 	}
 }
