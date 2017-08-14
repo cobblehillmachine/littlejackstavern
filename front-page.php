@@ -46,7 +46,20 @@
 		</div>
 		<div class="peeking-2 peeking"><img src="<?php the_field('peeking_image_2'); ?>"></div>
 	</div>
-	
+	<section class="awardSection">
+		<div class="award">
+			<section><img src="<?php the_field('award1') ?>" /></section>
+			<footer><?php the_field('award1_text') ?></footer>
+		</div>
+		<div class="award">
+			<section><img src="<?php the_field('award2') ?>" /></section>
+			<footer><?php the_field('award2_text') ?></footer>
+		</div>
+		<div class="award">
+			<section><img src="<?php the_field('award3') ?>" /></section>
+			<footer><?php the_field('award3_text') ?></footer>
+		</div>
+	</section>
 </div>
 <hr>
 
